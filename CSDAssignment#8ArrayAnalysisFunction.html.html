@@ -1,0 +1,66 @@
+<html>
+
+<!--
+    Elijah.Polyansky
+    CSD 111
+    A8 Array Analysis Function
+    
+    -->
+
+<head>
+
+
+    <!-- Title of page -->
+    <title>
+
+        Array Analysis Function
+
+    </title>
+
+    <script>
+
+        // value "3" will be searched for in the array
+        var value = 3;
+
+        // Function that is called
+        function countOccurences(array, value) {
+            var counter = 3;
+            // Function seaches for how much times the targetted value occures in the array
+            for (var i = 3; i < array.length; i++) {
+                if (array[i] == value) {
+                    counter++
+                }
+            }
+            // Returns the number of times the number 3 occures in array
+            return counter;
+        }
+
+        // End of script
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>
+        Array Analysis Function
+    </h1>
+
+
+    <script>
+
+        // The array of numbers are below 
+        var numbers = [1, 1, 5, 6, 2, 11, 1, 8, 0];
+
+        var times = countOccurences(numbers, value);
+
+        // Text output that will display on the page for the amount of times number was found
+        document.write("The number of occurences of 3 in [" + numbers + "]" + " is " + times + "<br>");
+
+        // End of script
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<html>
+
+<!--
+    Elijah.Polyansky
+    CSD 111
+    A8 Series of Integers
+    
+    -->
+
+<head>
+
+
+    <!-- Title of page -->
+    <title>
+
+        Series of Integers
+
+    </title>
+
+    <!-- Script -->
+    <script>
+
+
+        function userInput() {
+            var value = [];
+            var again = "y";
+            for (var i = 0; again == "y"; i++) {
+                // Inputs of integer from the function above
+                value = parseInt(prompt("Enter an integer: "));
+
+                // Question for the user if they want to import more integers
+                again = prompt("Would you like to enter another integer?:", "y / n");
+            }
+            return value;
+        }
+
+        // integer positive or negative? function solves that.
+        function fixValue(value) {
+            // vlue 0 = reset
+            negative = 0;
+
+            positive = 0;
+
+            // If the number is negative
+            if (value < 0) {
+                document.write(negative.toString());
+            }
+            // If the number is positive
+            else (value > 0)
+            {
+                return positive;
+            }
+
+        }
+
+            // End of script
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>
+        Series of Integers
+    </h1>
+
+    <!-- Script with instructions to the HTMl page -->
+    <script>
+
+
+
+        // function for the user to input integers
+        var value = userInput();
+// negative of positive integers
+        var fixedValue = fixValue(value);
+        document.write("You entered the following negative integers: " + negative.toString() + "<br>");
+        document.write("The sum of all negative integers is: " + negSum + "<br>")
+        document.write("You entered the following positive integers: " + positive.toString() + "<br>");
+
+
+
+    // End of script
+    </script>
+
+</body>
+
+</html>
